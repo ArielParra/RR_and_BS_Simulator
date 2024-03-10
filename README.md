@@ -1,11 +1,12 @@
 # Descripcion
 
 Es un simulador de Round Robbin y Buddy Sistem echo en C++ para la materia de Sistemas operativos
+![BuddySistem_RoundRobin-Demo](./BuddySistem_RoundRobin-Demo.png)
 
 # Compilacion
 
 En Windows es necesario el compilador gcc, el cual puede obtenerse a travez de MSYS2.
-Para compilar en sistemas basados en Unix como MacOS o Linux, se requiere de las librerias de ncurses y ncurses-dev, se puede compilar ejecutando el comando "make"
+Para compilar en sistemas basados en Unix como MacOS o Linux, se requiere de las librerias de ncurses y ncurses-dev, se puede compilar ejecutando el comando "make" (para Windows ejecutar el programa local .\make)
 
 ---
 
