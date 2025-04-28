@@ -1,57 +1,53 @@
-# Descripcion
+# Round Robin and Buddy System Simulator
 
-Es un simulador de Round Robbin y Buddy Sistem echo en C++ para la materia de Sistemas operativos
-![BuddySistem_RoundRobin-Demo](./BuddySistem_RoundRobin-Demo.png)
+This project is a simulator for process scheduling and memory management algorithms, specifically **Round Robin** and **Buddy System**, developed in **C++** as part of the **Operating Systems** course. The simulator includes a user-friendly text interface that allows users to interact with the system, configure parameters, observe statistics, and control the simulation execution.
 
-# Compilacion
+![BuddySystem_RoundRobin-Demo](./demo.gif)
 
-En Windows es necesario el compilador gcc, el cual puede obtenerse a travez de MSYS2.
-Para compilar en sistemas basados en Unix como MacOS o Linux, se requiere de las librerias de ncurses y ncurses-dev, se puede compilar ejecutando el comando "make" (para Windows ejecutar el programa local .\make.exe)
+> [!IMPORTANT]  
+> This project is made completely in spanish, the Code, Menus and on-screen instructions, all will be displayed only in **Spanish**.
 
 ---
 
-# Entregables
+## Main Features
 
-- [x] Software: para windows, ejecutable y fuentes par acompilar
-    - [x] Interfaz:
-        - [x] interfaz de texto amigable al usuario 
-        - [x] info de la lista de procesos
-        - [x] info del proceso en ejecucion
-        - [x] info para validadr el round robin
-        - [x] mostrar representacion de memoria 
-        - [x] memoria con info para buddy system
-    - [x] Funcionalidad:
-        - [x] Configuracion de Parametros:
-            - [x] cuanto de procesamiento a cada proceso
-            - [x] tamano maximo de la memoria de proceso
-            - [x] tamano maximo del cuanto de procesamiento por proceso (cuanto sistema)
-        - [x] Constantes/Restricciones:
-            - [x] tamano de la memoria, fijo (1,4,8 MB)
-            - [x] tamano de split 32KB
-        - [x] Procesos: generacion aleatoria y automatica, siempre un proceso listo a entrar con base a las variables parametrizadas
-        - [x] Estadisticas:
-            - [x] Posterior a la ejecucion:
-                - [x] 2 estadisticas PEJ: tiempo medio atencion aprocesos, num tot de procesos, etc
-                - [x] Principales indicadores durante la ejecucion (OPCIONAL)
-        - [x] Velocidad: El usuario debera controlar la velocidad de la simulacion
-        - [x] condicion de paro: el usuario indica cuando para la simulacion
+### Interface
+- **User-friendly text interface**: Designed to facilitate user interaction.
+- **Real-time information**:
+  - List of processes in queue.
+  - Currently executing process.
+  - Graphical representation of memory.
+  - Round Robin algorithm validation.
+  - Detailed information on the Buddy System status.
 
-- [x] Reporte:
-    - [x] Portada 
-    - [x] Indice
-    - [x] Introduccion
-        - [x] justificacion del lenguaje de programacion
-    - [x] Contenido
-        - [x] Implementacion Buddy system, conceptual y codigo
-        - [x] Implementacion Round robin, Conceptualy codigo
-    - [x] Conclusiones
-    - [x] Bibliografia en APA
-    - [x] Anexo A, instrucciones para compilar el proyecto
+### Functionality
+- **Parameter configuration**:
+  - Quantum of processing time per process.
+  - Maximum memory size.
+  - Maximum quantum size for processing.
+- **Constraints**:
+  - Fixed memory sizes (1 MB, 4 MB, 8 MB).
+  - Minimum memory split size (32 KB).
+- **Processes**:
+  - Automatic and random process generation.
+  - There is always a process ready to enter the queue.
+- **Statistics**:
+  - Average process handling time.
+  - Total number of processes handled.
+  - Percentage of memory used.
+- **Speed control**:
+  - Users can adjust the simulation speed.
+- **Stop condition**:
+  - Users can stop the simulation at any time.
 
+---
 
-- [x] Video: demostrando y explicando la operacion del software
+## Dependencies
 
-- [x] Manual De usuario: archivo electronioco puede ser un .txt o .md 
+### Windows
+- **GCC Compiler**: Can be installed via [MSYS2](https://www.msys2.org/).
+- **Standard C++ libraries**.
 
+### Linux/MacOS
+- **ncurses and ncurses-dev libraries** (or **ncurses-devel** on some distributions).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>

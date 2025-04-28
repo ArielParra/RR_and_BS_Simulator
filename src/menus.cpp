@@ -84,8 +84,8 @@ void primer_pantalla() {
   //cout<<FG_BLUE <<"Nombre del Profesor   ";
   cout<<FG_MAGENTA <<" Materia: Sistemas Operativos"<<RESET_COLOR;
 
-  gotoxy(x,y++);
-  //cout<<FG_CYAN<< "Nombres de los integrantes" << RESET_COLOR;
+  gotoxy(x,y++);cout<<FG_CYAN<< "Nombres de los integrantes" << RESET_COLOR;
+  gotoxy(x,y++);cout<<FG_CYAN<< "Ariel Parra" << RESET_COLOR;
   gotoxy(x,y++);
   fflush(stdout);
 }
